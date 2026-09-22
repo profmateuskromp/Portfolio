@@ -1,5 +1,3 @@
-// --- DINÂMICA INTERATIVA MAXIMALISTA ---
-
 document.addEventListener("DOMContentLoaded", function() {
     const cards = document.querySelectorAll('.card, .text-block, .timeline-item');
     
