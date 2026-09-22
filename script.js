@@ -1,26 +1,31 @@
-// --- ANIMAÇÕES E INTERAÇÕES SCRIPT ---
+// --- DINÂMICA INTERATIVA MAXIMALISTA ---
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Seleciona os elementos que vão receber a animação de Fade-in
-    const animatables = document.querySelectorAll('.card, .text-block, .timeline-item');
+    const cards = document.querySelectorAll('.card, .text-block, .timeline-item');
     
-    // Configura o observador para ativar o efeito quando o usuário rolar a tela até o item
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if(entry.isIntersecting) {
+                // Remove os filtros de opacidade e traz o elemento para sua posição de impacto original
                 entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
+                entry.target.style.transform = entry.target.dataset.originalTransform || 'translateY(0)';
             }
         });
     }, { 
-        threshold: 0.1 // Ativa a animação assim que 10% do item estiver visível
+        threshold: 0.05 // Dispara rápido ao menor sinal na tela
     });
 
-    // Aplica o estado inicial oculto em cada elemento e inicia a observação
-    animatables.forEach(item => {
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(20px)';
-        item.style.transition = 'all 0.6s ease-out';
-        observer.observe(item);
+    cards.forEach(card => {
+        // Armazena a rotação aleatória padrão do CSS para não quebrá-la
+        const computedStyle = window.getComputedStyle(card);
+        const currentTransform = computedStyle.transform;
+        card.dataset.originalTransform = currentTransform === 'none' ? '' : currentTransform;
+
+        // Aplica o estado de transição dramática inicial
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(40px) scale(0.95)';
+        card.style.transition = 'all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+        
+        observer.observe(card);
     });
 });

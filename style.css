@@ -1,240 +1,166 @@
-/* --- ESTILOS CSS --- */
-:root {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --accent-color: #bfa15f; /* Tom dourado/antigo para arte */
-    --card-bg: #1e1e1e;
-    --nav-bg: rgba(18, 18, 18, 0.95);
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Artístico Experimental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+    <!-- NAVEGAÇÃO -->
+    <header>
+        <nav>
+            <div class="logo">Seu Nome.Art</div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Quem Sou</a></li>
+                <li><a href="#artes-visuais">Matéria</a></li>
+                <li><a href="#literatura">Palavra</a></li>
+                <li><a href="#cenica">Corpo</a></li>
+                <li><a href="#arquitetura">Espaço</a></li>
+                <li><a href="#botanica">Vida</a></li>
+                <li><a href="#tecnologia">Código</a></li>
+                <li><a href="#educacao">Troca</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-}
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="hero">
+        <div class="hero-img-container">
+            <img src="https://placeholder.com" alt="Sua Foto" class="hero-img">
+        </div>
+        <div>
+            <h2>Criador Absoluto.</h2>
+            <p>Sou um artista multidisciplinar que nega barreiras. Minhas mãos moldam argila, entalham carimbos, dão vida a orquídeas raras, digitam códigos de automação e projetam espaços físicos.</p>
+            <p>Este espaço não é apenas um portfólio; é uma colagem viva da minha mente caótica e produtiva.</p>
+        </div>
+    </section>
 
-/* Navegação */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--nav-bg);
-    border-bottom: 1px solid #2a2a2a;
-    z-index: 1000;
-}
+    <!-- ARTES VISUAIS -->
+    <section id="artes-visuais">
+        <h2>Artes Visuais & Plásticas</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://placeholder.com" alt="Quadro" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Pinturas & Telas</h3>
+                    <p>Óleo e texturas pesadas sobre linho cru.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placeholder.com" alt="Desenho" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Desenhos Crueis</h3>
+                    <p>Grafite denso e nanquim saturado sobre papéis texturizados.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placeholder.com" alt="Escultura" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Esculturas Orgânicas</h3>
+                    <p>Fusão tridimensional entre argila queimada e raízes mortas.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://placeholder.com" alt="Carimbo" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Carimbos & Entalhes</h3>
+                    <p>Xilogravura e gravação manual em blocos de alta densidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1rem 2rem;
-}
+    <!-- LITERATURA -->
+    <section id="literatura">
+        <h2>Literatura Absorta</h2>
+        <div class="text-block">
+            <strong>Monólogo: O Grito no Vidro</strong>
+            "Se o silêncio desta sala pudesse falar, ele gritaria os nomes que esquecemos de registrar nas fotografias..."
+        </div>
+        <div class="text-block">
+            <strong>Poesia: Arquitetura Epífita</strong>
+            As orquídeas sabem do tempo
+            o que o cimento tenta prender.
+            O nó que amarra o vento
+            é o mesmo que faz florescer.
+        </div>
+    </section>
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: var(--accent-color);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
+    <!-- PRODUÇÃO CÊNICA -->
+    <section id="cenica">
+        <h2>Produção Cênica & Palco</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="video-container">
+                    <iframe src="https://youtube.com" allowfullscreen></iframe>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Performance: Ruína Urbana</h3>
+                    <p>Teatro físico e espacialidade. Fragmentos capturados ao vivo.</p>
+                    <a href="#" class="btn" target="_blank">Assistir Performance</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-}
+    <!-- DECORAÇÃO E ARQUITETURA -->
+    <section id="arquitetura">
+        <h2>Cenografia, Decoração & Arquitetura</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://placeholder.com" alt="Projeto" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">O Orquidário Concreto</h3>
+                    <p>Projeto de interiores residencial integrando estruturas metálicas brutas com microclimas para plantas tropicais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.nav-links a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s;
-}
+    <!-- BOTÂNICA -->
+    <section id="botanica">
+        <h2>Coleções Botânicas & Orquidário</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://placeholder.com" alt="Orquídea" class="card-img">
+                <div class="card-content">
+                    <h3 class="card-title">Cattleya walkeriana</h3>
+                    <p>Espécime raro de orquídea preservado e catalogado sob condições controladas de luz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-.nav-links a:hover {
-    color: var(--accent-color);
-}
+    <!-- TECNOLOGIA -->
+    <section id="tecnologia">
+        <h2>Tecnologia & Experimentos Digitais</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="card-content">
+                    <h3 class="card-title">Irrigador Autônomo com I.A.</h3>
+                    <p>Protótipo e lógica digital criados para monitorar a saúde e umidade das epífitas em tempo real.</p>
+                    <a href="https://github.com" class="btn" target="_blank">Ver Repositório GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-/* Estrutura das Seções */
-section {
-    padding: 6rem 2rem 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    border-bottom: 1px solid #2a2a2a;
-}
+    <!-- EDUCAÇÃO -->
+    <section id="educacao">
+        <h2>Docência & Saberes</h2>
+        <div class="timeline-item">
+            <div class="timeline-date">2024 / MESTRE</div>
+            <h3>Professor de Cenografia e Espacialidade Artística</h3>
+            <p>Formação prática direcionada para a desconstrução do espaço cênico tradicional.</p>
+        </div>
+    </section>
 
-h2 {
-    font-size: 2rem;
-    color: var(--accent-color);
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    border-left: 4px solid var(--accent-color);
-    padding-left: 1rem;
-}
+    <footer>
+        <p>CONSTRUÍDO SOBRE FLUXO CONTÍNUO DE ARTE // 2026</p>
+    </footer>
 
-p {
-    margin-bottom: 1rem;
-}
-
-/* Grid de Mídia/Cards */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 1.5rem;
-}
-
-.card {
-    background-color: var(--card-bg);
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid #2a2a2a;
-    transition: transform 0.3s, border-color 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: var(--accent-color);
-}
-
-.card-img {
-    width: 100%;
-    height: 250px;
-    background-color: #333;
-    object-fit: cover;
-    display: block;
-}
-
-.card-content {
-    padding: 1.5rem;
-}
-
-.card-title {
-    color: var(--accent-color);
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
-}
-
-/* Sobre Mim */
-.hero {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    padding-top: 8rem;
-}
-
-.hero-img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-color: #333;
-    object-fit: cover;
-    flex-shrink: 0;
-    border: 3px solid var(--accent-color);
-}
-
-/* Literatura */
-.text-block {
-    background-color: var(--card-bg);
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 1.5rem;
-    border-left: 3px solid var(--accent-color);
-    font-style: italic;
-    white-space: pre-line;
-}
-
-/* Links/Botões */
-.btn {
-    display: inline-block;
-    background-color: transparent;
-    color: var(--accent-color);
-    border: 1px solid var(--accent-color);
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    text-decoration: none;
-    margin-top: 1rem;
-    transition: background 0.3s, color 0.3s;
-    font-size: 0.9rem;
-}
-
-.btn:hover {
-    background-color: var(--accent-color);
-    color: var(--bg-color);
-}
-
-/* Currículo/Experiência */
-.timeline-item {
-    margin-bottom: 2rem;
-    padding-left: 1.5rem;
-    border-left: 2px solid #333;
-    position: relative;
-}
-
-.timeline-item::before {
-    content: '';
-    position: absolute;
-    left: -6px;
-    top: 6px;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-}
-
-.timeline-date {
-    font-size: 0.85rem;
-    color: #888;
-}
-
-/* Vídeo Responsivo */
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    margin-bottom: 1rem;
-    background: #000;
-}
-
-.video-container iframe, .video-container video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-}
-
-/* Rodapé */
-footer {
-    text-align: center;
-    padding: 2rem;
-    background-color: #0a0a0a;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-    .nav-links {
-        justify-content: center;
-    }
-}
+    <script src="script.js"></script>
+</body>
+</html>
