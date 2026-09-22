@@ -3,147 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio Artístico & Tecnológico</title>
+    <title>Portfólio Artístico Multidisciplinar</title>
+    <!-- Vinculação do arquivo CSS externo -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <nav>
-            <div class="logo">Seu Nome</div>
-            <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#artes-visuais">Visuais</a></li>
-                <li><a href="#literatura">Literatura</a></li>
-                <li><a href="#cenica">Cênica</a></li>
-                <li><a href="#arquitetura">Arquitetura</a></li>
-                <li><a href="#botanica">Botânica</a></li>
-                <li><a href="#tecnologia">Tecnologia</a></li>
-                <li><a href="#educacao">Educação</a></li>
-            </ul>
-        </nav>
+        <h1>Mente Aberta & Mãos Artísticas</h1>
+        <p>Portfólio Integrado de Produção Técnica, Visual e Científica</p>
     </header>
 
-    <section id="sobre" class="hero">
-        <img src="https://placeholder.com" alt="Sua Foto" class="hero-img">
-        <div>
-            <span class="tag" style="background-color: #1a1a1a;">Multidisciplinar</span>
-            <h2>Arte, natureza e estrutura em harmonia.</h2>
-            <p>Um percurso transversal que unifica a matéria das artes visuais, o verbo literário, a presença cênica, a estética espacial e o rigor vivo da botânica aliado à tecnologia.</p>
-        </div>
-    </section>
+    <nav id="menu-principal">
+        <a href="#inicio">Início</a>
+        <a href="#artes-visuais">Artes Visuais</a>
+        <a href="#literatura">Literatura</a>
+        <a href="#cenica">Cênica</a>
+        <a href="#arquitetura">Arquitetura</a>
+        <a href="#botanica">Botânica</a>
+        <a href="#tecnologia">Tecnologia</a>
+        <a href="#educacao">Educação</a>
+    </nav>
 
-    <section id="artes-visuais">
-        <h2>Artes Visuais</h2>
-        <div class="section-desc">Quadros, desenhos, esculturas e carimbos autorais.</div>
-        <div class="grid">
-            <div class="card">
-                <img src="https://placeholder.com" alt="Quadro" class="card-img">
-                <div class="card-content">
-                    <span class="tag tag-visual">Pintura</span>
-                    <h3 class="card-title">Quadros & Telas</h3>
-                    <p>Investigação cromática e textural em planos pictóricos.</p>
+    <main>
+        <!-- SOBRE MIM / INTRODUÇÃO -->
+        <section id="inicio" class="introducao">
+            <h2>Sobre Mim</h2>
+            <p>Seja bem-vindo ao meu espaço de convergência. Sou um artista plástico, escritor, encenador e educador que encontra na botânica e na tecnologia ferramentas complementares de expressão. Este site reúne registros práticos e conceituais de obras tangíveis, textos literários, atuações nos palcos e sistemas projetados para o diálogo entre o espaço construído e a vida vegetal.</p>
+        </section>
+
+        <!-- ARTES VISUAIS -->
+        <section id="artes-visuais" class="card-portfolio secao-visuais">
+            <h2>🎨 Artes Visuais</h2>
+            <p>Explorações bidimensionais e tridimensionais materializadas através de pigmentos, texturas pesadas, entalhes manuais e moldagens de volume bruto.</p>
+            
+            <!-- Filtros Dinâmicos -->
+            <div class="filtros-container">
+                <button class="btn-filtro ativo" data-filter="todos">Todos</button>
+                <button class="btn-filtro" data-filter="quadro">Quadros</button>
+                <button class="btn-filtro" data-filter="desenho">Desenhos</button>
+                <button class="btn-filtro" data-filter="escultura">Esculturas</button>
+                <button class="btn-filtro" data-filter="carimbo">Carimbos</button>
+            </div>
+
+            <div class="midia-container" id="galeria-visuais">
+                <div class="midia-item" data-cat="quadro">
+                    <img src="https://placeholder.com" alt="Quadro artístico">
+                    <p>Óleo sobre Tela - Texturas de Outono</p>
+                </div>
+                <div class="midia-item" data-cat="desenho">
+                    <img src="https://placeholder.com" alt="Desenho em nanquim">
+                    <p>Estudo Anatômico em Grafite e Nanquim</p>
+                </div>
+                <div class="midia-item" data-cat="escultura">
+                    <img src="https://placeholder.com" alt="Escultura em argila">
+                    <p>Modelagem em Argila Queimada e Fibra</p>
+                </div>
+                <div class="midia-item" data-cat="carimbo">
+                    <img src="https://placeholder.com" alt="Impressão de carimbo">
+                    <p>Matriz de Borracha Linoleogravura</p>
                 </div>
             </div>
-            <div class="card">
-                <img src="https://placeholder.com" alt="Desenho" class="card-img">
-                <div class="card-content">
-                    <span class="tag tag-visual">Desenho</span>
-                    <h3 class="card-title">Estudos no Papel</h3>
-                    <p>Traços e densidades em grafite e nanquim.</p>
+        </section>
+
+        <!-- LITERATURA -->
+        <section id="literatura" class="card-portfolio secao-literatura">
+            <h2>🔮 Palavra Escrita: Monólogos, Poesias & Histórias</h2>
+            <p>Criações literárias textuais focadas na introspecção, ritmo e na preparação de textos para leitura performática.</p>
+            
+            <div class="abas-container">
+                <button class="aba-btn ativa" data-index="0">Monólogos</button>
+                <button class="aba-btn" data-index="1">Poesias</button>
+                <button class="aba-btn" data-index="2">Histórias Curtas</button>
+            </div>
+
+            <div class="aba-conteudo ativa">
+                <strong>O Silêncio do Concreto (Monólogo Dramático)</strong>
+                <p>"Se este cômodo pudesse reter o calor das palavras que nunca saíram da garganta, o gesso das paredes estaria fervendo. Eu passei anos desenhando cantos arredondados nas maquetes para que as sombras não tivessem onde se esconder... Mas elas sempre encontram um vão."</p>
+            </div>
+            <div class="aba-conteudo">
+                <strong>Raízes Aéreas (Poesia Botânica)</strong>
+                <p>A cerâmica prende a terra,
+                A orquídea rejeita o chão.
+                O vento que a mata encerra
+                Alimenta sua expansão.
+                A arquitetura que abriga
+                É a mesma que sabe soltar.</p>
+            </div>
+            <div class="aba-conteudo">
+                <strong>O Gravador de Sombras (Microconto)</strong>
+                <p>Ele esculpia carimbos com texturas de folhas mortas. À noite, pressionava as matrizes embebidas em tinta preta sobre os projetos arquitetônicos da cidade, devolvendo árvores de tinta aos bairros cinzentos.</p>
+            </div>
+
+            <div class="gerador-container">
+                <button class="btn-acao" id="btn-sortear">Sortear Pensamento do Dia</button>
+                <p id="texto-sorteado" style="margin-top: 15px; font-style: italic; color: #5c3a69; font-weight: bold;"></p>
+            </div>
+        </section>
+
+        <!-- PRODUÇÃO CÊNICA -->
+        <section id="cenica" class="card-portfolio secao-cenica">
+            <h2>🎭 Produção Cênica e Palco</h2>
+            <p>Registros visuais de direção, cenografia e trechos de atuações dramáticas capturadas em apresentações públicas.</p>
+            
+            <div class="midia-container">
+                <div class="midia-item" style="flex: 2;">
+                    <iframe width="100%" height="315" src="https://youtube.com" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Recorte em Vídeo: Performance Espacial e Corpo (Temporada Recente)</p>
+                </div>
+                <div class="midia-item">
+                    <img src="https://placeholder.com" alt="Foto do palco e cenário">
+                    <p>Registro de Cenografia de Palco</p>
                 </div>
             </div>
-        </div>
-    </section>
+            <p style="font-size: 0.95em; background: #fffbf5; padding: 15px; border-radius: 6px; border-left: 4px solid #e67e22;">
+                <strong>Nota de Direção:</strong> O trabalho cênico foca na interação direta do ator com estruturas físicas móveis, utilizando elementos da botânica real integrados à iluminação de palco.
+            </p>
+        </section>
 
-    <section id="literatura">
-        <h2>Monólogos & Poesias</h2>
-        <div class="section-desc">Arquivos da palavra escrita e falada.</div>
-        <div class="text-block">
-            <span class="tag tag-lit">Monólogo</span>
-            <strong>O Eco das Paredes</strong>
-            <p>"Se o silêncio pudesse estruturar espaço, ele desenharia aberturas para o vento..."</p>
-        </div>
-    </section>
-
-    <section id="cenica">
-        <h2>Produção Cênica</h2>
-        <div class="section-desc">Registros de atuação e espacialidade em palco.</div>
-        <div class="grid">
-            <div class="card">
-                <div class="video-container">
-                    <iframe src="https://youtube.com" allowfullscreen></iframe>
+        <!-- ARQUITETURA -->
+        <section id="arquitetura" class="card-portfolio secao-arquitetura">
+            <h2>📐 Decoração & Projetos de Arquitetura</h2>
+            <p>Propostas conceituais em andamento e designs de ambientes internos dedicados à convivência harmônica entre pessoas e plantas.</p>
+            
+            <div class="midia-container">
+                <div class="midia-item">
+                    <img src="https://placeholder.com" alt="Render de arquitetura de interiores">
+                    <p>Conceito: Estúdio de Criação com Claraboias de Luz Difusa</p>
                 </div>
-                <div class="card-content">
-                    <span class="tag tag-cenica">Performance</span>
-                    <h3 class="card-title">Trecho Gravado</h3>
-                    <p>Trecho de atuação e concepção cênica.</p>
-                    <a href="#" class="btn" target="_blank">Ver Registro</a>
+                <div class="midia-item">
+                    <img src="https://placeholder.com" alt="Esquema técnico decorativo">
+                    <p>Detalhamento de Ventilação e Fluxo para Orquidários Conectados</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="arquitetura">
-        <h2>Decoração & Arquitetura</h2>
-        <div class="section-desc">Projetos espaciais e propostas em desenvolvimento.</div>
-        <div class="grid">
-            <div class="card">
-                <img src="https://placeholder.com" alt="Projeto" class="card-img">
-                <div class="card-content">
-                    <span class="tag tag-arq">Espaço</span>
-                    <h3 class="card-title">Concepção de Interiores</h3>
-                    <p>Diálogo entre iluminação, volume e vegetação.</p>
+        <!-- BOTÂNICA -->
+        <section id="botanica" class="card-portfolio secao-botanica">
+            <h2>🌱 Coleções Botânicas & Registros do Orquidário</h2>
+            <p>Catalogação cuidadosa, acompanhamento de florações sazonais de espécies epífitas e monitoramento de cultivo.</p>
+            
+            <div class="midia-container">
+                <div class="midia-item">
+                    <img src="https://placeholder.com" alt="Foto de Orquídea do acervo">
+                    <p>Registro de Floração: Cattleya labiata</p>
+                </div>
+                <div class="midia-item">
+                    <img src="https://placeholder.com" alt="Foto do Orquidário">
+                    <p>Painel de Fixação em Madeira Sustentável</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section id="botanica">
-        <h2>Coleções Botânicas & Orquidário</h2>
-        <div class="section-desc">Registros de cultivo e catalogação epífita.</div>
-        <div class="grid">
-            <div class="card">
-                <img src="https://placeholder.com" alt="Orquidário" class="card-img">
-                <div class="card-content">
-                    <span class="tag tag-botanica">Botânica</span>
-                    <h3 class="card-title">Manejo do Orquidário</h3>
-                    <p>Acompanhamento de floração e fixação natural.</p>
+            <div class="simulador-orquidario">
+                <h3>Estufa Inteligente: Dados em Tempo Real</h3>
+                <p>Simulação dos sensores de ambiente instalados na estrutura física do meu orquidário.</p>
+                <div class="status-painel">
+                    <div>Umidade: <span id="val-umidade" style="color:#2ecc71;">72%</span></div>
+                    <div>Temperatura: <span id="val-temp" style="color:#e67e22;">24.5°C</span></div>
+                    <div>Sombreamento: <span style="color:#3498db;">50% (Ideal)</span></div>
+                </div>
+                <div style="text-align: center; margin-top: 15px;">
+                    <button class="btn-acao" style="background-color: #2ecc71;" id="btn-rega">Acionar Microaspersores (Teste)</button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="tecnologia">
-        <h2>Tecnologia & Trabalhos Digitais</h2>
-        <div class="section-desc">Repositórios e aplicações interativas.</div>
-        <div class="grid">
-            <div class="card">
-                <div class="card-content">
-                    <span class="tag tag-tech">Código</span>
-                    <h3 class="card-title">Automação de Estufa</h3>
-                    <p>Sistemas de controle lógico para o orquidário.</p>
-                    <a href="https://github.com" class="btn" target="_blank">Repositório GitHub</a>
-                </div>
+        <!-- TECNOLOGIA -->
+        <section id="tecnologia" class="card-portfolio secao-tecnologia">
+            <h2>💻 Trabalhos Digitais & Produções Tecnológicas</h2>
+            <p>Desenvolvimento de softwares, códigos para automação residencial/botânica e repositórios de livre acesso.</p>
+             <h4>Código de Controle da Estufa (C++ / IoT)</h4>
+            <div class="codigo-container">
+<pre><code>
+// Rotina automática de verificação de umidade e rega
+void gerenciarOrquidario() {
+  int leituraUmidade = analogRead(sensorPin);
+  float porcentagemUmidade = map(leituraUmidade, 1023, 200, 0, 100);
+
+  if (porcentagemUmidade &lt; 60.0) {
+    digitalWrite(valvulaAguaPin, HIGH); // Abre os aspersores
+    delay(5000);                        // Rega por 5 segundos
+    digitalWrite(valvulaAguaPin, LOW);  // Fecha
+  }
+}
+</code></pre>
             </div>
-        </div>
-    </section>
+            <a href="https://github.com" target="_blank" class="link-repositorio">🔗 Visitar meu Repositório Geral no GitHub</a>
+        </section>
 
-    <section id="educacao">
-        <h2>Experiência Docente</h2>
-        <div class="section-desc">Atuação como professor e orientador.</div>
-        <div class="timeline-item">
-            <div class="timeline-date">2024 — Presente</div>
-            <span class="tag tag-edu">Ensino</span>
-            <h3 class="card-title" style="font-size: 1.1rem; margin-top: 0.5rem;">Professor de Artes e Cenografia</h3>
-            <p>Abordagens práticas sobre tridimensionalidade e espaço cênico.</p>
-        </div>
-    </section>
+        <!-- EDUCAÇÃO -->
+        <section id="educacao" class="card-portfolio secao-educacao">
+            <h2>👥 Experiência Profissional como Professor</h2>
+            <p>Minha atuação no campo pedagógico, compartilhando conhecimentos técnicos e poéticos em ambientes formais e oficinas coletivas.</p>
+            
+            <ul class="lista-experiencias">
+                <li>
+                    <span class="ano">2024 — Presente</span>
+                    <strong>Professor Titular de Cenografia e Artes Plásticas</strong>
+                    <p>Orientação de projetos práticos e teóricos ligando a espacialidade arquitetônica e a performance dramática no Ensino Técnico/Superior.</p>
+                </li>
+                <li>
+                    <span class="ano">2022 — 2024</span>
+                    <strong>Orientador de Laboratórios de Gravura e Impressão</strong>
+                    <p>Desenvolvimento de oficinas comunitárias ensinando entalhe manual de carimbos e técnicas de padronagem orgânica.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 Portfólio Artístico</p>
+        <p>&copy; 2026 - Portfólio Artístico, Técnico e Tecnológico. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- Vinculação do arquivo JS externo -->
     <script src="script.js"></script>
 </body>
 </html>
